@@ -1,6 +1,6 @@
-# Given a dataset |d|, returns a matrix of the same length where the nth row
-# indicates whether the nth row of |d| survived.
-predictLogistic <- function(d) {
+# Given a training dataset |train| and a truth vector for that dataset |trainTruth|, returns
+# a 
+createLogisticModel <- function(train, trainTruth) {
   predictions <- rep(.5, nrow(d))
   logisticCost(predictions, d$Survived)
   return(predictions)
